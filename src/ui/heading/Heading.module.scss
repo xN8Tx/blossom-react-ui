@@ -1,0 +1,25 @@
+@import 'src/scss/index.scss';
+
+.heading {
+  @include text-mixin;
+}
+
+.small {
+  font-size: 10px;
+}
+
+.medium {
+  font-size: 20px;
+}
+
+.large {
+  font-size: 30px;
+}
+
+.primary {
+  color: blue;
+}
+
+.secondary {
+  color: var(--red-color);
+}
