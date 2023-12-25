@@ -1,7 +1,6 @@
 import React, { MouseEvent, ReactNode } from 'react';
 
 import style from './Button.module.scss';
-import '../../scss/index.scss';
 
 export interface IButton {
   children: ReactNode;
