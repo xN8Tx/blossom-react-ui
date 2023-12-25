@@ -3,33 +3,13 @@ import { act, render, screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 
 import { ThemeProvider } from './ThemeContext';
-import { useTheme } from './ThemeHooks';
-
-const TestComponent = () => {
-  const { theme, setTheme } = useTheme();
-
-  const onClickHandler = (newTheme: typeof theme) => {
-    setTheme(newTheme);
-  };
-
-  return (
-    <>
-      <p data-testid='theme'>{theme}</p>
-      <button data-testid='setDark' onClick={() => onClickHandler('dark')}>
-        Dark
-      </button>
-      <button data-testid='setLight' onClick={() => onClickHandler('light')}>
-        Light
-      </button>
-    </>
-  );
-};
+import { ThemeMock } from '../../test/theme.mock';
 
 describe('Theme test', () => {
   it('Should be light', () => {
     render(
       <ThemeProvider colorTheme='light'>
-        <TestComponent />
+        <ThemeMock />
       </ThemeProvider>,
     );
 
@@ -39,7 +19,7 @@ describe('Theme test', () => {
   it('Should be dark', () => {
     render(
       <ThemeProvider colorTheme='dark'>
-        <TestComponent />
+        <ThemeMock />
       </ThemeProvider>,
     );
 
@@ -49,7 +29,7 @@ describe('Theme test', () => {
   it('Should be set to light', async () => {
     render(
       <ThemeProvider colorTheme='dark'>
-        <TestComponent />
+        <ThemeMock />
       </ThemeProvider>,
     );
 
@@ -63,7 +43,7 @@ describe('Theme test', () => {
   it('Should be set to dark', async () => {
     render(
       <ThemeProvider colorTheme='light'>
-        <TestComponent />
+        <ThemeMock />
       </ThemeProvider>,
     );
 

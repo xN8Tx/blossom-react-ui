@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react';
 
-import { ThemeContextType, ThemeProviderPropsType } from './theme.types';
-import { getTheme } from './theme.utils';
+import { ThemeContextType, ThemeProviderPropsType } from './Theme.types';
+import { getTheme } from './Theme.utils';
 
 export const ThemeContext = createContext<ThemeContextType>(
   {} as ThemeContextType,

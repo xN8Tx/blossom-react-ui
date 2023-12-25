@@ -1,4 +1,4 @@
-import { ThemeType } from './theme.types';
+import { ThemeType } from './Theme.types';
 
 const getTheme = (colorTheme?: ThemeType) => {
   const localStorageTheme = localStorage.getItem('theme');
