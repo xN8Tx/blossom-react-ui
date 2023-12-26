@@ -1,9 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Heading Snapshot 1`] = `
+exports[`Heading Snapshot L 1`] = `
 <h1
-  class="heading large primary"
+  class="Heading l bold primary"
 >
   Hello world!
 </h1>
+`;
+
+exports[`Heading Snapshot M 1`] = `
+<h2
+  class="Heading m bold primary"
+>
+  Hello world!
+</h2>
+`;
+
+exports[`Heading Snapshot S 1`] = `
+<h3
+  class="Heading s bold primary"
+>
+  Hello world!
+</h3>
+`;
+
+exports[`Heading Snapshot XL 1`] = `
+<h1
+  class="Heading xl bold primary"
+>
+  Hello world!
+</h1>
+`;
+
+exports[`Heading Snapshot XS 1`] = `
+<h3
+  class="Heading xs bold primary"
+>
+  Hello world!
+</h3>
 `;

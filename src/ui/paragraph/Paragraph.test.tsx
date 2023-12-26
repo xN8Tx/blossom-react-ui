@@ -2,15 +2,15 @@ import React from 'react';
 
 import { cleanup, render, screen } from '@testing-library/react';
 
-import { Heading } from './Heading';
+import { Paragraph } from './Paragraph';
 
-describe('Heading', () => {
+describe('Paragraph', () => {
   afterEach(() => cleanup());
   test('Should render', () => {
     render(
-      <Heading color='primary' size='xs' weight='bold'>
+      <Paragraph color='primary' size='xs' weight='regular'>
         Hello world!
-      </Heading>,
+      </Paragraph>,
     );
 
     const button = screen.getByText('Hello world!');
@@ -20,9 +20,9 @@ describe('Heading', () => {
 
   it('Snapshot XS', () => {
     render(
-      <Heading color='primary' size='xs' weight='bold'>
+      <Paragraph color='primary' size='xs' weight='regular'>
         Hello world!
-      </Heading>,
+      </Paragraph>,
     );
 
     const button = screen.getByText('Hello world!');
@@ -32,9 +32,9 @@ describe('Heading', () => {
 
   it('Snapshot S', () => {
     render(
-      <Heading color='primary' size='s' weight='bold'>
+      <Paragraph color='primary' size='s' weight='regular'>
         Hello world!
-      </Heading>,
+      </Paragraph>,
     );
 
     const button = screen.getByText('Hello world!');
@@ -44,9 +44,9 @@ describe('Heading', () => {
 
   it('Snapshot M', () => {
     render(
-      <Heading color='primary' size='m' weight='bold'>
+      <Paragraph color='primary' size='m' weight='regular'>
         Hello world!
-      </Heading>,
+      </Paragraph>,
     );
 
     const button = screen.getByText('Hello world!');
@@ -56,9 +56,9 @@ describe('Heading', () => {
 
   it('Snapshot L', () => {
     render(
-      <Heading color='primary' size='l' weight='bold'>
+      <Paragraph color='primary' size='l' weight='regular'>
         Hello world!
-      </Heading>,
+      </Paragraph>,
     );
 
     const button = screen.getByText('Hello world!');
@@ -68,9 +68,9 @@ describe('Heading', () => {
 
   it('Snapshot XL', () => {
     render(
-      <Heading color='primary' size='xl' weight='bold'>
+      <Paragraph color='primary' size='xl' weight='regular'>
         Hello world!
-      </Heading>,
+      </Paragraph>,
     );
 
     const button = screen.getByText('Hello world!');

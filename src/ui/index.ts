@@ -1,5 +1,5 @@
-import Heading, { IHeading } from './heading/Heading';
-import Button, { IButton } from './button/Button';
+export { Paragraph } from './paragraph/Paragraph';
+export { Heading } from './heading/Heading';
 
-export type { IHeading, IButton };
-export { Heading, Button };
+export type { ParagraphPropsType } from './paragraph/Paragraph.types';
+export type { HeadingPropsType } from './heading/Heading.types';

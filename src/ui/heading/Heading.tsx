@@ -1,19 +1,22 @@
 import React from 'react';
 
+import type { HeadingPropsType } from './Heading.types';
+
 import style from './Heading.module.scss';
 
-export interface IHeading {
-  children: React.ReactNode;
-  size: 'small' | 'medium' | 'large';
-  color: 'primary' | 'secondary';
-}
-
-export default function Heading({
+export const Heading = ({
   children,
   size,
-  color,
-}: IHeading): React.JSX.Element {
-  const className = `${style.heading} ${style[size]} ${style[color]}`;
+  weight = 'bold',
+  color = 'primary',
+  ...props
+}: HeadingPropsType) => {
+  const className = `${style.Heading} ${style[size]} ${style[weight]} ${style[color]}`;
 
-  return <h1 className={className}>{children}</h1>;
-}
+  const allProps = { className, children, ...props };
+
+  if (size === 'xl' || size === 'l') return <h1 {...allProps} />;
+  if (size === 'm') return <h2 {...allProps} />;
+  if (size === 's') return <h3 {...allProps} />;
+  if (size === 'xs') return <h3 {...allProps} />;
+};

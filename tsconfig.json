@@ -16,9 +16,7 @@
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true,
     "allowJs": false,
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "types": ["node", "jest", "@testing-library/jest-dom"]
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist", "./src/stories"]

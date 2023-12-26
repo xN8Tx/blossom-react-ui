@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paragraph Snapshot L 1`] = `
+<p
+  class="Paragraph l regular primary"
+>
+  Hello world!
+</p>
+`;
+
+exports[`Paragraph Snapshot M 1`] = `
+<p
+  class="Paragraph m regular primary"
+>
+  Hello world!
+</p>
+`;
+
+exports[`Paragraph Snapshot S 1`] = `
+<p
+  class="Paragraph s regular primary"
+>
+  Hello world!
+</p>
+`;
+
+exports[`Paragraph Snapshot XL 1`] = `
+<p
+  class="Paragraph xl regular primary"
+>
+  Hello world!
+</p>
+`;
+
+exports[`Paragraph Snapshot XS 1`] = `
+<p
+  class="Paragraph xs regular primary"
+>
+  Hello world!
+</p>
+`;

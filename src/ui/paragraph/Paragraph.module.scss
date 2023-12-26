@@ -1,0 +1,22 @@
+@import 'src/scss/index.scss';
+
+.Paragraph {
+  @include text-main-mixin;
+
+  // Size
+  &.xs {
+    font-size: 11px;
+  }
+  &.s {
+    font-size: 12px;
+  }
+  &.m {
+    font-size: 13px;
+  }
+  &.l {
+    font-size: 14px;
+  }
+  &.xl {
+    font-size: 16px;
+  }
+}

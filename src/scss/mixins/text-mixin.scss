@@ -1,4 +1,51 @@
-@mixin text-mixin {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 400;
+@import '../variables/_index.scss';
+
+@mixin text-weight-mixin($weight) {
+  @if $weight == 'bold' {
+    font-weight: 700;
+  }
+  @if $weight == 'medium' {
+    font-weight: 500;
+  }
+  @if $weight == 'regular' {
+    font-weight: 400;
+  }
+}
+
+@mixin text-color-mixin($color) {
+  @if $color == 'light' {
+    color: var(--blossom-ui-light-text-color);
+  }
+  @if $color == 'primary' {
+    color: var(--blossom-ui-primary-text-color);
+  }
+  @if $color == 'dark' {
+    color: var(--blossom-ui-dark-text-color);
+  }
+}
+
+@mixin text-main-mixin {
+  font-family: 'DM Sans', sans-serif;
+
+  // Weight
+  &.regular {
+    @include text-weight-mixin('regular');
+  }
+  &.medium {
+    @include text-weight-mixin('medium');
+  }
+  &.bold {
+    @include text-weight-mixin('bold');
+  }
+
+  // Colors
+  &.light {
+    @include text-color-mixin('light');
+  }
+  &.primary {
+    @include text-color-mixin('primary');
+  }
+  &.dark {
+    @include text-color-mixin('dark');
+  }
 }

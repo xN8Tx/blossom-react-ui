@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Heading } from './Heading';
+import { Paragraph } from './Paragraph';
 
 const meta = {
-  title: 'UI/Heading',
-  component: Heading,
+  title: 'UI/Paragraph',
+  component: Paragraph,
   parameters: {
     layout: 'centered',
   },
@@ -12,7 +12,7 @@ const meta = {
   args: {
     children: 'Blossom with love <3',
   },
-} satisfies Meta<typeof Heading>;
+} satisfies Meta<typeof Paragraph>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
