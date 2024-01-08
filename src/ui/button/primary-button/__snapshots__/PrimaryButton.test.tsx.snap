@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`primary button test Snapshot test 1`] = `
+<button
+  class="Button blue"
+  disabled=""
+>
+  Blossom Button
+</button>
+`;

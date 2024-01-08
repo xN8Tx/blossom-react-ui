@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Secondary button test Snapshot test 1`] = `
+<span>
+  Blossom Button
+</span>
+`;

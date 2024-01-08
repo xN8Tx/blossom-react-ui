@@ -13,9 +13,9 @@ describe('Heading', () => {
       </Heading>,
     );
 
-    const button = screen.getByText('Hello world!');
+    const heading = screen.getByText('Hello world!');
 
-    expect(button).toBeInTheDocument();
+    expect(heading).toBeInTheDocument();
   });
 
   it('Snapshot XS', () => {
@@ -25,9 +25,9 @@ describe('Heading', () => {
       </Heading>,
     );
 
-    const button = screen.getByText('Hello world!');
+    const heading = screen.getByText('Hello world!');
 
-    expect(button).toMatchSnapshot();
+    expect(heading).toMatchSnapshot();
   });
 
   it('Snapshot S', () => {
@@ -37,9 +37,9 @@ describe('Heading', () => {
       </Heading>,
     );
 
-    const button = screen.getByText('Hello world!');
+    const heading = screen.getByText('Hello world!');
 
-    expect(button).toMatchSnapshot();
+    expect(heading).toMatchSnapshot();
   });
 
   it('Snapshot M', () => {
@@ -49,9 +49,9 @@ describe('Heading', () => {
       </Heading>,
     );
 
-    const button = screen.getByText('Hello world!');
+    const heading = screen.getByText('Hello world!');
 
-    expect(button).toMatchSnapshot();
+    expect(heading).toMatchSnapshot();
   });
 
   it('Snapshot L', () => {
@@ -61,9 +61,9 @@ describe('Heading', () => {
       </Heading>,
     );
 
-    const button = screen.getByText('Hello world!');
+    const heading = screen.getByText('Hello world!');
 
-    expect(button).toMatchSnapshot();
+    expect(heading).toMatchSnapshot();
   });
 
   it('Snapshot XL', () => {
@@ -73,8 +73,8 @@ describe('Heading', () => {
       </Heading>,
     );
 
-    const button = screen.getByText('Hello world!');
+    const heading = screen.getByText('Hello world!');
 
-    expect(button).toMatchSnapshot();
+    expect(heading).toMatchSnapshot();
   });
 });

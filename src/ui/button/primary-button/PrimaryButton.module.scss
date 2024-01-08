@@ -1,0 +1,56 @@
+@import 'src/scss/index.scss';
+
+.Button {
+  @include centered-mixin;
+
+  width: 100%;
+  min-height: 42px;
+
+  padding: 14px 7px;
+  border-radius: 8px;
+
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--blossom-ui-primary-text-color);
+
+  transition: var(--blossom-ui-main-transition);
+  cursor: pointer;
+
+  &.blue {
+    background-color: var(--blossom-ui-primary-blue-color);
+
+    &:focus {
+      border: 1.5px solid var(--blossom-ui-dark-red-color);
+    }
+    &:disabled {
+      background-color: var(--blossom-ui-dark-blue-color);
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--blossom-ui-dark-blue-color);
+      }
+    }
+  }
+  &.red {
+    background-color: var(--blossom-ui-primary-red-color);
+
+    &:focus {
+      border: 1.5px solid var(--blossom-ui-dark-blue-color);
+    }
+    &:disabled {
+      background-color: var(--blossom-ui-dark-red-color);
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--blossom-ui-dark-red-color);
+      }
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    padding: 7px 4.5px;
+  }
+}

@@ -1,0 +1,6 @@
+.svg-fill-color {
+  & > path,
+  rect {
+    fill: var(--blossom-ui-primary-text-color);
+  }
+}

@@ -1,0 +1,45 @@
+@import 'src/scss/index.scss';
+
+.Button {
+  @include centered-mixin;
+  gap: 5px;
+
+  padding: 5px 15px;
+
+  background-color: var(--blossom-ui-light-background-color);
+  border-radius: 8px;
+
+  transition: var(--blossom-ui-main-transition);
+
+  & > span {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    color: var(--blossom-ui-primary-text-color);
+  }
+
+  &:focus {
+    border: 1px solid var(--blossom-ui-dark-blue-color);
+  }
+
+  &:disabled {
+    background-color: var(--blossom-ui-dark-background-color);
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    &[contains-image='true'] {
+      & > span {
+        display: none;
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--blossom-ui-dark-background-color);
+    }
+  }
+}
