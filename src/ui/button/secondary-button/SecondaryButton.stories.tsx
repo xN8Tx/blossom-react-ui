@@ -2,6 +2,7 @@ import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { SecondaryButton } from './SecondaryButton';
+
 import BackIcon from '../../../test/assets/BackIcon.mock';
 
 const image = () => <BackIcon />;

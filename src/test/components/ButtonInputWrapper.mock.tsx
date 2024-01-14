@@ -11,7 +11,7 @@ export const ButtonInputWrapper = ({
   type,
   placeholder,
   position,
-  disabled,
+  disabled = false,
   onClick,
   ...props
 }: ButtonInputWrapperType) => {

@@ -15,11 +15,31 @@ const meta = {
     onClick: () => console.log('U click (^*^)'),
     disabled: false,
   },
+  argTypes: {
+    onClick: {
+      description: '```() => void```',
+    },
+    disabled: {
+      description: '```boolean```',
+    },
+    type: {
+      description:
+        '```email```  ```number```  ```password```  ```text```  ```tel```',
+      options: ['email', 'number', 'password', 'text', 'tel'],
+      control: { type: 'radio' },
+    },
+    position: {
+      description: '```left``` ```right```',
+      options: ['left', 'right'],
+      control: { type: 'radio' },
+    },
+  },
 } satisfies Meta<typeof ButtonInputWrapper>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+/** Use ButtonInput instead the ButtonInputWrapper */
 export const Right: Story = {
   args: {
     type: 'text',
@@ -27,6 +47,7 @@ export const Right: Story = {
   },
 };
 
+/** Use ButtonInput instead the ButtonInputWrapper */
 export const Left: Story = {
   args: {
     type: 'text',

@@ -17,15 +17,18 @@ const preview: Preview = {
   },
   argTypes: {
     colorTheme: {
-      type: 'boolean',
+      options: ['dark', 'light'],
+      control: { type: 'radio' },
+      defaultValue: 'Dark',
+      description: '```Do not use in project only for storybook showcase.```',
     },
   },
   args: {
-    colorTheme: true,
+    colorTheme: 'dark',
   },
   decorators: [
     (Story, context) => {
-      const theme = context.args.colorTheme === true ? 'dark' : 'light';
+      const theme = context.args.colorTheme;
 
       return (
         <ThemeProvider colorTheme={theme}>
