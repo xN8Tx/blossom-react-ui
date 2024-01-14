@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
 
 type ButtonPropsType = {
@@ -5,6 +6,7 @@ type ButtonPropsType = {
   color: 'blue' | 'red';
   onClick: (arg?: unknown) => void;
   disabled?: boolean;
+  [x: string]: any;
 };
 
 export type { ButtonPropsType };

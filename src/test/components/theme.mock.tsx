@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useTheme } from '../components';
+import { useTheme } from '../../components';
 
 const ThemeMock = () => {
   const { theme, setTheme } = useTheme();

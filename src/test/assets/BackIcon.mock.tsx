@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './style.mock.scss';
+import '../scss/style.mock.scss';
 
 export default function BackIcon() {
   return (

@@ -2,12 +2,12 @@ import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { SecondaryButton } from './SecondaryButton';
-import BackIcon from '../../../test/BackIcon.mock';
+import BackIcon from '../../../test/assets/BackIcon.mock';
 
 const image = () => <BackIcon />;
 
 const meta = {
-  title: 'UI/Secondary Button',
+  title: 'UI/SecondaryButton',
   component: SecondaryButton,
   parameters: {
     layout: 'centered',

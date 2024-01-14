@@ -3,7 +3,7 @@ import { act, render, screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 
 import { ThemeProvider } from './ThemeContext';
-import { ThemeMock } from '../../test/theme.mock';
+import { ThemeMock } from '../../test/components/theme.mock';
 
 describe('Theme test', () => {
   it('Should be light', () => {
