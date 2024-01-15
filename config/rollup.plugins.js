@@ -34,7 +34,11 @@ const plugins = [
   }),
   typescript({
     tsconfig: `${DIR_PATH}/tsconfig.json`,
-    exclude: ['**/*.test.tsx', '**/*.test.ts', '**/*.stories.ts', 'src/test'],
+    exclude: [
+      `${DIR_PATH}/src/**/*.test.tsx`,
+      `${DIR_PATH}/src/**/*.stories.tsx`,
+      `${DIR_PATH}/src/test/**/*.*`,
+    ],
   }),
   postcss({
     extract: false,
