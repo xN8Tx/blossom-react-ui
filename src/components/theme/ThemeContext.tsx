@@ -11,12 +11,13 @@ export const ThemeProvider = ({
   children,
   colorTheme,
 }: ThemeProviderPropsType) => {
-  const selectedTheme = colorTheme ? getTheme(colorTheme) : getTheme();
+  const isColorTheme = colorTheme === 'dark' || colorTheme === 'light';
+  const selectedTheme = isColorTheme ? getTheme(colorTheme) : getTheme();
   const [theme, setTheme] = useState(selectedTheme);
 
   // Special for storybook work
   useEffect(() => {
-    setTheme(colorTheme!);
+    if (isColorTheme) setTheme(colorTheme!);
   }, [colorTheme]);
 
   useEffect(() => {

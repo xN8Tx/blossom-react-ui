@@ -10,13 +10,13 @@ const getTheme = (colorTheme?: ThemeType) => {
     return localStorageTheme;
   }
 
-  const isWindowMatchMedia = window.matchMedia !== undefined;
+  const isColorTheme = colorTheme === 'dark' || colorTheme === 'light';
+  if (isColorTheme) return colorTheme;
 
+  const isWindowMatchMedia = window.matchMedia !== undefined;
   const isThemeByDefaultDark =
     isWindowMatchMedia &&
     window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-  if (colorTheme === 'dark' || colorTheme === 'light') return colorTheme;
   if (isThemeByDefaultDark) return 'dark';
   return 'light';
 };
