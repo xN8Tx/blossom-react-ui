@@ -16,7 +16,7 @@ const getTheme = (colorTheme?: ThemeType) => {
     isWindowMatchMedia &&
     window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  if (colorTheme) return colorTheme;
+  if (colorTheme === 'dark' || colorTheme === 'light') return colorTheme;
   if (isThemeByDefaultDark) return 'dark';
   return 'light';
 };

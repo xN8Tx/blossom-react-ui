@@ -2,7 +2,7 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 npm run lint
-npm run build-test
-npm run build-storybook
+npm run test:build
+npm run storybook:build
 npm run loki
 npm run build

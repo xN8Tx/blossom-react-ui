@@ -1,6 +1,6 @@
 {
   "name": "blossom-react-ui",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Typescript React component library",
   "main": "./dist/cjs/index.js",
   "types": "dist/index.d.ts",
@@ -10,14 +10,14 @@
   "type": "module",
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
-    "lint": "eslint . --ext ts,tsx",
-    "fix-lint": "eslint . --fix",
-    "prepare": "husky install",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "loki": "loki test --chromeRetries=3 --reactUri=file:./storybook-static",
+    "dev": "storybook dev -p 6006",
     "test": "jest --watchAll --verbose",
-    "build-test": "jest"
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky install",
+    "lint": "eslint . --ext ts,tsx",
+    "test:build": "jest",
+    "storybook:build": "storybook build",
+    "loki": "loki test --chromeRetries=3 --reactUri=file:./storybook-static"
   },
   "peerDependencies": {
     "react": "^18.2.0",

@@ -1,5 +1,3 @@
-@import '../variables/_index.scss';
-
 @mixin text-weight-mixin($weight) {
   @if $weight == 'bold' {
     font-weight: 700;
