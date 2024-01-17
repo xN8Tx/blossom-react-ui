@@ -2,7 +2,7 @@
 import React from 'react';
 
 type TextSizeType = 'xs' | 's' | 'm' | 'l' | 'xl';
-type TextColorType = 'light' | 'primary' | 'dark';
+type TextColorType = 'light' | 'primary' | 'dark' | 'red' | 'green';
 
 type TextPropsType<W> = {
   children: React.ReactNode;

@@ -20,6 +20,12 @@
   @if $color == 'dark' {
     color: var(--blossom-ui-dark-text-color);
   }
+  @if $color == 'red' {
+    color: var(--blossom-ui-primary-red-color);
+  }
+  @if $color == 'green' {
+    color: var(--blossom-ui-primary-green-color);
+  }
 }
 
 @mixin text-main-mixin {
